@@ -9,7 +9,7 @@
 # as requested by BLS people
 
 # importing what is necessary
-import sys, getopt, requests, re, time, datetime
+import sys, getopt, requests, re, time, datetime, ssl
 
 # defining main function
 def main(argv):
@@ -36,7 +36,7 @@ def main(argv):
             
     # setting a value for infinite loop
     daemon = 'true'
-
+    print "Checking your selection of websites. Just kill me when you want and check the logfile %s" % outputfile
     # and the loop in person!
     while daemon == 'true' :
         # reading from conf file
@@ -62,6 +62,10 @@ def main(argv):
                         patt = "pattern %s found" % pattern
                     secs = r.elapsed.total_seconds()
                 except requests.exceptions.Timeout:
+                    code = "KO Timeout!"
+                    patt = ''
+                    secs = ''
+                except ssl.SSLError:
                     code = "KO Timeout!"
                     patt = ''
                     secs = ''
