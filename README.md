@@ -4,9 +4,13 @@ Usage:
 
 ```./monitor.py -h```
 
-## File sites.csv contains a pre-selection of urls and patterns to be monitored
-## Feel free to play with it!
+File sites.csv contains a pre-selection of urls and patterns to be monitored
 
-## Default timeout is set to 0.2 sec so we can see both: sites that are able and unable to respond
+Feel free to play with it!
+
+Default timeout is set to 0.2 sec so we can see both: sites that are 
+[] able 
+[] unable 
+to respond
 
 **Cheers to BLS guys!**
