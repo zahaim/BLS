@@ -10,7 +10,9 @@ Feel free to play with it!
 
 Default timeout is set to 0.2 sec so we can see both: sites that are 
 * able 
-* unable 
+* unable   
 to respond
+
+There's probably ton of bugs in this masterpiece but you know... :)
 
 **Cheers to BLS guys!**
